@@ -31,7 +31,29 @@ namespace Projeto1.Models
                 return;
             }
             Console.WriteLine($"{a} / {b} = {a / b}");
-
         }   
+
+        public void Seno(int angulo)
+        {
+        double radiano = angulo * Math.PI / 180;
+        double seno = Math.Sin(radiano);
+        Console.WriteLine($"O Seno de {angulo} é igual a: {Math.Round(seno, 3)}");
+        }
+
+        public void Coseno(int angulo)
+        {
+        double radiano = angulo * Math.PI / 180;
+        double coseno = Math.Cos(radiano);
+        Console.WriteLine($"O Coseno de {angulo} é igual a: {Math.Round(coseno, 3)}");
+        }
+
+        public void Tangente(int angulo)
+        {
+        double radiano = angulo * Math.PI / 180;
+        double Tangente = Math.Tan(radiano);
+        Console.WriteLine($"A Tangente de {angulo} é igual a: {Math.Round(Tangente, 3)}");
+        }
+
+
     }
 }
