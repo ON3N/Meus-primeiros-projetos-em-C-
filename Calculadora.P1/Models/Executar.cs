@@ -20,7 +20,7 @@ namespace Projeto1.Models
             Console.WriteLine("5 - Seno");
             Console.WriteLine("6 - Coseno");
             Console.WriteLine("7 - Tangente");
-            
+
             string opcao = Console.ReadLine();
             int op = Convert.ToInt32(opcao);
 
@@ -71,7 +71,7 @@ namespace Projeto1.Models
             }
             else
             {
-                Console.WriteLine("Opção inválida. Por favor, escolha uma opção entre 1 e 4.");
+                Console.WriteLine("Opção inválida. Por favor, escolha uma opção entre 1 e 7.");
                 return;
             }
         }
