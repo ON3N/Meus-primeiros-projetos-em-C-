@@ -11,20 +11,16 @@ namespace Projeto1.Models
 
         public void Exec()
         {
+            int op = 0;
+            
+            do{
+            Console.WriteLine("-------------------");
             Console.WriteLine("Calculadora Simples\n");
             Console.WriteLine("Escolha qual operador deseja utilizar:");
-            Console.WriteLine("1 - Somar");
-            Console.WriteLine("2 - Subtrair");
-            Console.WriteLine("3 - Multiplicar");
-            Console.WriteLine("4 - Dividir");
-            Console.WriteLine("5 - Seno");
-            Console.WriteLine("6 - Coseno");
-            Console.WriteLine("7 - Tangente");
-            Console.WriteLine("8 - Potencia");
-            Console.WriteLine("9 - Raiz Quadrada");
+            Console.WriteLine("1 - Somar | 3 - Multiplicar | 5 - Seno | 7 - Tangente | 9 - Raiz Quadrada ");
+            Console.WriteLine("2 - Subtrair | 4 - Dividir | 6 - Coseno | 8 - Potencia | 0 - Encerrar programa");
 
-            string opcao = Console.ReadLine();
-            int op = Convert.ToInt32(opcao);
+            int.TryParse(Console.ReadLine(), out op);
 
             if (op >= 1 && op <= 4)
             {
@@ -94,11 +90,14 @@ namespace Projeto1.Models
                 calc.RaizQuadrada(raiz);
             }
 
-            else
+            else if ( op < 0 || op > 9)
             {
                 Console.WriteLine("Opção inválida. Por favor, escolha uma opção entre 1 e 9.");
-                return;
             }
+
+            } while(op != 0);
+                Console.WriteLine("Obrigado por utilizar minha calculadora! ");
+            
         }
     }
-}
+}   
