@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Calculadora_P1.Models;
+using Classes.Common.Calculadora_P1.Models;
 
 Calculadora calc = new Calculadora();
 
