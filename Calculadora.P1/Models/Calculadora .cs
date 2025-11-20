@@ -54,6 +54,15 @@ namespace Projeto1.Models
         Console.WriteLine($"A Tangente de {angulo} é igual a: {Math.Round(Tangente, 3)}");
         }
 
+        public void Potencia( double x, double y)
+        {
+            Console.WriteLine($"A potência de {x} elevado a {y} é igual a: {Math.Pow(x,y)}");
+        }
+
+        public void RaizQuadrada(double x)
+        {
+            Console.WriteLine($"A raiz quadrada de {x} é igual a: {Math.Sqrt(x)}");
+        }
 
     }
 }

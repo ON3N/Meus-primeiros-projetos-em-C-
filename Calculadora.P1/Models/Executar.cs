@@ -20,6 +20,8 @@ namespace Projeto1.Models
             Console.WriteLine("5 - Seno");
             Console.WriteLine("6 - Coseno");
             Console.WriteLine("7 - Tangente");
+            Console.WriteLine("8 - Potencia");
+            Console.WriteLine("9 - Raiz Quadrada");
 
             string opcao = Console.ReadLine();
             int op = Convert.ToInt32(opcao);
@@ -50,6 +52,7 @@ namespace Projeto1.Models
                         break;
                 }
             }
+
             else if ( op >= 5 && op <= 7 )
             {
                 Console.WriteLine("Informe o ângulo: ");
@@ -69,9 +72,31 @@ namespace Projeto1.Models
                         break;
                 }
             }
+
+            else if ( op == 8)
+            {
+                Console.WriteLine("Digite a base: ");
+                string str_bas = Console.ReadLine();
+                double bas = Convert.ToDouble(str_bas);
+
+                Console.WriteLine("Digite o expoente: ");
+                string str_exp = Console.ReadLine();
+                double exp = Convert.ToDouble(str_exp);
+
+                calc.Potencia(bas,exp);
+            }
+
+            else if( op == 9)
+            {
+                Console.WriteLine("Digite o valor para calcular a raiz quadrada: ");
+                string str_raiz = Console.ReadLine();
+                double raiz = Convert.ToDouble(str_raiz);
+                calc.RaizQuadrada(raiz);
+            }
+
             else
             {
-                Console.WriteLine("Opção inválida. Por favor, escolha uma opção entre 1 e 7.");
+                Console.WriteLine("Opção inválida. Por favor, escolha uma opção entre 1 e 9.");
                 return;
             }
         }
