@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Classes.Common.Calculadora_P1.Models
 {
+    /// <summary>
+    /// Classe que armazena a lógica de todas as operações
+    /// </summary>
     public class Calculadora
     {
         public void Somar(double a, double b)
@@ -24,7 +27,8 @@ namespace Classes.Common.Calculadora_P1.Models
         }
 
         public void Dividir(double a, double b)
-        {
+        {   
+            //Condição que verifica se um dos valores informados pelo usuário é igual a 0 (divisão não permitida).
             if (b == 0 || a == 0)
             {
                 Console.WriteLine("Erro: Divisão por zero não é permitida.");
