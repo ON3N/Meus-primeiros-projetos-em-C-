@@ -86,11 +86,11 @@ namespace TestandoExemplos.Models
         {
             Console.WriteLine("--------------------");
             Console.WriteLine("Alunos Cadastrados: ");
-            int contador2 = 1;
+            
             for (int contador = 0; contador < Alunos.Count; contador++)
             {
-                Console.WriteLine($"{contador2} - {Alunos[contador]}");
-                contador2++;
+                Console.WriteLine($"{contador + 1} - {Alunos[contador]}");
+                
             }
             Console.WriteLine("Tecle Enter para continuar");
             Console.ReadLine();
